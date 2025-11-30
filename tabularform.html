@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            table{
+                width: 75%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                font-family: Arial, Helvetica, sans-serif;
+                box-shadow: .5px 15px;
+
+            }
+            th,td{
+                border: 2px,solid;
+                padding: 15px;
+                text-align: center;
+            }
+            th{
+                background-color:  ;
+                color: blue;
+            }
+            td{
+                background-color: aquamarine;
+            
+            }
+            tr{
+                background-color: coral;
+                cursor: pointer;
+            }
+            form{
+                width:70%;
+                margin:20px auto;
+                padding: 25px;
+                border: 1px solid #8e8e8e;
+                background-color: aqua;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            input[type="text"],input[type="number"],textarea{
+                width: 90%;
+                padding: 20px;
+                margin:5px;
+                border:1px solid chocolate;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type="submit"]{
+                background-color: red;
+                color: beige;
+                padding: 15px,20px;
+                border: none;
+                border-radius: 5px;
+                box-sizing: border-box;
+                cursor: progress;
+                }
+
+                label{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color:  blue;
+                }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">CSS on table and form control</h1>
+        <table>
+            <tr>
+                <th>reg.no</th>
+                <th>name of the student</th>
+                <th>course</th>
+            </tr>
+            <tr> 
+                <td>12501410</td>
+                <td>thasmitha</td>
+                <td>cse</td>
+            </t>
+        </table>
+        <form>
+            <p>login form:</p>
+            <label for="regno">registration number</label><br>
+            <input type="text" id="regno" name="regno" placeholder="enter your reg number"><br>
+            <label for="name">student name</label>
+            <input type="text" id="name" name="name" placeholder="enter your name"><br></br>
+            <p>select your Gender</p>
+            <input type="radio" id="male" name="Gender">
+                <label for="male">Male</label><br>
+                <input id="Female" type="radio" name="Gender">
+                <label for="Female">Female</label><br></br>
+             <label for="date" >enter your DOB  </label>
+             <input type="date" id="date" name="date"> 
+
+             <label for="course">select you course:</label>
+            <select id="course" name="course"> 
+                <option>cse</option>
+                <option>eee</option>
+                <option>ece</option>
+                ,<option>civil</option>
+            </select><br></br>
+            <label for ="message">enter your mesaage</label>
+            <textarea id="message" name="message" rows="4" aria="placeholderkeep ur message here...!"></textarea>
+             <input type="submit">
+        </form>
+    </body>
+</html>

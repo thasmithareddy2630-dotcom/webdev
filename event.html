@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Event attributes</title>
+    </head>
+    <script>
+        function onclick(){
+            alert("single click on button")
+        }
+        function ondblclick(){
+            alert("Double click on button")
+        }
+        function onMouseOver(element){
+            element.style.backgroundColor = "yellow";
+        }
+        function onMouseOut(element){
+            element.style.backgroundColor = "lightblue";
+        }
+    </script>
+    <body>
+        <h2>HTML Event </h2>
+        <button onclick="alert('you clicked the button')">Click Me</button><br><br>
+        <button ondblclick="alert('you double clicked the button')">Double Click Me</button>
+        <div
+        onmouseover="onMouseOver(this)"
+        onmouseout="onMouseOut(this)"
+        style="width:200px;height:100px;background-color:lightblue;margin-top:20px;">
+        Mouse Over And Out
+    </div>
+    <input type="text"  placeholder="Press a key"
+    onkeydown="onKeyDown()"
+    onkeyup="onKeyUp()"><br><br>
+    <p id="keyMessage">key message will be here</p>
+    </body>
+</html>

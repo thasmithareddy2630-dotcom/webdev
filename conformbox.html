@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+    </head>
+    <body>
+        <h2> conform box in html</h2>
+        <button onclick="deletedata()">click me..!</button>
+        <script>
+            function deletedata(){
+                let response=confirm("are u sure to dte data : ?");
+                if(response==true)
+                    document.write('data dlted..1')
+                else
+                    alert("operation cancelled..!")
+
+            }
+        </script>
+        <h2>propmt box in javascript</h2>
+        <button onclick="getName()">click me to know ur name</button>
+        <p id="result"></p>
+        <script>
+            function getName(){
+                let name=prompt("enter ur name:");
+                if(name!=null && name!="")
+            {
+                document.getElementById("result")
+                .innerHTML="Hello"+name;
+            }
+                else{
+                    document.getElementById("result")
+                    .innerHTML="u have not enter the input";
+            }
+        }
+        </script>
+    </body>
+</html>

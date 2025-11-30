@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        
+    </head>
+    <title>check vowels or consonents </title>
+    <body>
+        
+        
+            <h2>Prompt Box in JavaScript</h2>
+    <button onclick="calculator()">Click Me to calculate</button>
+    <p id="result">Answer: </p>
+    <script>
+        function calculator(){
+            let first = prompt("Enter First Number: ");
+            let second = prompt("Enter Second Number: ");
+            let op = prompt("Enter Operator (+, -, *, /): ");
+            switch(op){
+                case '+':
+                    document.getElementById("result").innerHTML = "Answer: " + (Number(first) + Number(second));
+                    break;
+                case '-':
+                    document.getElementById("result").innerHTML = "Answer: " + (Number(first) - Number(second));
+                    break;
+                case '*':
+                    document.getElementById("result").innerHTML = "Answer: " + (Number(first) * Number(second));
+                    break;
+                case '/':
+                    document.getElementById("result").innerHTML = "Answer: " + (Number(first) / Number(second));
+                    break;
+                default:
+                    document.getElementById("result").innerHTML = "Answer: Invalid Operator";   
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
+        </script>
+    </body>
+</html>

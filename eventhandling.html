@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+    <head> 
+        <script>
+            function onClick(){
+                alert("single click on botton")
+            }
+            function onDoubleClick(){
+                alert("double click on botton")
+            }
+        </script>
+    </head>
+    <title>event handling  </title>
+    <body onload="alert('your pages loaded')">
+        <h2>on click</h2>
+        <button onclick="alert('you click on button')"> click here</button>
+        <h2> mouse over and out</h2>
+        <p onmouseover="this.style.color='red'">mouse over the text</p>
+        <h2> mouse  and out</h2>
+        <p onmouseout="this.style.color='blue'">mouse out the text</p>
+        <h2>page onload</h2>
+        <p>page loading</p>
+        <h2>onchange</h2>
+        <select onchange="alert('selection changes')">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <h2>onsubmit</h2>
+        <form onsubmit="alert('forms submitted...!');return false;">
+            <label>name</label>
+            <input type="text" required>
+            <button type="submit">submit</button>
+            </form>
+            <h2>onkeydown and onkeyup</h2>
+            <input type= "text" on keydown= "console.log('key pressed')" placeholder ="press any key here">
+            <input type="text" onkeyup="console.log('key pressed')">
+            placeholder="release a key here"
+            <h2>html event</h2>
+            <button onclick="handleClick()">Single click here</button>
+            <br><br>
+            <button ondblclick="handleDoubleClick()">Double click here</button>
+            <div onmouseover="handleMouseOver(this)"
+            onmouseout="handleMouseOut(this)" 
+            style="width:150px;height: 40px; border: 1px solid black;"
+            >Mouse over and out</div>
+        
+        
+    </body>
+</html>

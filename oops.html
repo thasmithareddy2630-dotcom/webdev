@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        
+    </head>
+    <title>oop eg</title>
+    <body>
+        <h2>working with object,properties and methods</h2>
+        <script>
+            student={
+                name:"mohan",
+                age:21,
+                course:'cse',
+
+            showMe:function()
+            {
+                return 'hello,my name:'+this.name;
+
+            }
+            };
+            document.write("<br> <b>Name:</b>"+student.name);
+            document.write("<br> <b>age:</b>"+student.age);
+            document.write("<br> <b>course:</b>"+student.course);
+
+            document.write("<br><b>Hello</b></br>"+student.showMe());
+        </script>
+        <h2>adding and modifying object properties</h2>
+        <script>
+            let car={
+                brand:"toyota",
+                model:"corolla",
+                year:2010
+            };
+            document.write("<br><br>**<br><br>");
+            document.write("<b>original brand name:</b>"+car.brand);
+            document.write("<b>original model:</b>"+car.model);
+            document.write("<b> original year:</b>"+car.year);
+            car.year=2015;
+            document.write("<b>update year:</b>"+car.year);
+            car.color="blue";
+            document.write("<b>added color:</b>"+car.color);
+            document.write("<br><br>***<br><br>");
+
+        </script>
+    </body>
+</html>

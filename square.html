@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        
+    </head>
+    <title>square </title>
+    <body>
+        <script>
+            var a=4;
+            var b=6;
+            var c=8;    
+            var square=b*b-4*a*c
+            if(square<0){
+              document.write("no real roots") ;
+            } else if(square==0){
+                var root = -b/(2*a);
+                document.write("one real root: " + root);
+            }
+            else{
+                var root1=(-b+Math.sqrt(square))/(2*a);
+                var root2=(-b-Math.sqrt(square))/(2*a);
+                document.write("no real roots:"+root1+"and"+root2)
+            }
+
+        </script>
+    </body>
+</html>
